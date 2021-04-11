@@ -1,0 +1,103 @@
+
+
+.App {
+  font-family: 'Roboto';
+  width: 1440px;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  font-family: 'Roboto';
+  font-size: 14px;
+  width: 100%;
+  height: 64px;
+  background-color: #2196F3;
+}
+
+.navigation a {
+  display: flex;
+  height: 100%;
+  color: #ffffff;
+  opacity: .7;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background-color: #1E88E5;
+  transition: .2s;
+}
+
+.navigation .active {
+  opacity: 1;
+  background-color: #1E88E5;
+}
+
+.main_link {
+  width: 120px;
+  margin-left: 62px;
+}
+
+.favor_link {
+  width: 173px;
+}
+
+.main_list, .favorite_list {
+  width: 100%;
+}
+
+.list_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 27px 38px auto 38px;
+}
+
+.item {
+  width: 225px;
+  height: 225px;
+  margin: 24px;
+}
+
+.item:hover {
+  box-shadow: 0 5px 10px #000001;
+  content-visibility: visible !important;
+  transform: scale(1.1);
+  transition: .8s;  
+}
+
+.item img {
+  position: relative;
+  top: 168px;
+  left: 168px;
+  width: 36px;
+  height: 40px;
+}
+
+.item .favor_icon {  
+  content: url('./assets/img/Vector.png');
+}
+
+.favor_icon:hover,
+.item .active_icon {
+  visibility: visible;
+  content: url('./assets/img/VectorA.png');
+}
+
+
+.more_cats_btn {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}
